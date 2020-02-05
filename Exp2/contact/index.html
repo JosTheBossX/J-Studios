@@ -4,6 +4,17 @@
 <title>
     Contact Us.
 </title>
+<style>
+.column{
+    float: left;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+</style>
 </head>
 <body style="margin-left: 13%; margin-right: 13%; text-align: left;">
     <nav style="text-align: right;">
@@ -19,14 +30,22 @@
         Contact Us.
       </h1>
     <hr style="width:14%;margin-left: 0px;">
-    <p style="font-family: 'Courier New', Courier, monospace;">
-     Write us an e-mail via the form,<br>or just send us an e-mail directly at <br> 
-     <a href="mailto:yashkulthex@gmail.com">yashkulthex@gmail.com</a>
-    </p>
-    Name: <input type="text" value="Full Name"> <!--TODO Add the email side to it using tab-->
-    E-mail: <input type="text" value="example@email.com"><br/><br>
+    <div class="row">
+        <div class="column" style="width: 32%; padding-right: 20px;">
+            <p style="font-family: 'Courier New', Courier, monospace;">
+                Write us an e-mail via the form,<br>or just send us an e-mail directly at <br> 
+                <a href="mailto:yashkulthex@gmail.com">yashkulthex@gmail.com</a>
+               </p>
+        </div>
+        <div class="column" style="width: 60%;">
+            Name: <input type="text" value="Full Name"> &emsp; E-mail: <input type="text" value="example@email.com"><br/><br>
     Message: <br/><br><input type="text" value="Type in your message here" size="35px"><br/><br>
     <button>Send Message</button>
+        </div>
+    </div>
+    
+    
+   
     <h1>Our Address.</h1>
     <hr style="width:16%;margin-left: 0px;">
     <p style="font-family: 'Courier New', Courier, monospace;">
