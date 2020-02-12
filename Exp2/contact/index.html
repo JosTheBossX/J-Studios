@@ -15,11 +15,12 @@
     display: table;
 }
 </style>
+
 </head>
 <body style="margin-left: 13%; margin-right: 13%; text-align: left;">
     <nav style="text-align: right;">
         <a href="../index.html">Home</a> |
-        <a href="">Collections</a> |
+        <a href="../collections/index.html">Collections</a> |
         <a href="">Professional Work</a> |
         <a href="">Personal Work</a> |
         <a href="">Services</a> |
@@ -37,11 +38,14 @@
                 <a href="mailto:yashkulthex@gmail.com">yashkulthex@gmail.com</a>
                </p>
         </div>
+        <form name="contactform" action="/actionpage.php">
         <div class="column" style="width: 60%;">
-            Name: <input type="text" value="Full Name"> &emsp; E-mail: <input type="text" value="example@email.com"><br/><br>
-    Message: <br/><br><input type="text" value="Type in your message here" size="35px"><br/><br>
-    <button>Send Message</button>
+            Name: <input type="text" value="Full Name" required> &emsp; E-mail: <input type="email" value="example@email.com" required> <br/><br>
+            Phone No: <input type="tel"  required><br/><br>
+            Message: <br/><br><input type="text" value="Type in your message here" size="35px"><br/><br>
+            <input type="submit" value="Send Message">
         </div>
+        </form>
     </div>
     
     
@@ -59,10 +63,11 @@
     </p>
 
     
-    
-    <footer>
-        &copy; Copyright 2020 - Yash Kulthe. All Rights Reserved. 
-    </footer>
+    <div style="background-color:rgb(94, 94, 94);height: 60px;vertical-align: middle;">
+        <footer>
+            &ensp; &copy; Copyright 2020 - Yash Kulthe. All Rights Reserved. 
+         </footer>
+    </div>
 
 </body>
 </html>
