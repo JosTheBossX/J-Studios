@@ -1,0 +1,9 @@
+.column{
+    float: left;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
