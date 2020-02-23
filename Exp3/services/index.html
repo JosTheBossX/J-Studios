@@ -5,7 +5,17 @@
     J Studios
     <!--This is a comment-->
 </title>
-<link rel="stylesheet" type="text/css" href="css/general.css">
+<style>
+.column{
+float: left;
+}
+.row::after{
+content: "";
+clear: both;
+display: table;
+}
+</style>
+
 </head>
 <body style="margin-left: 13%; margin-right: 13%;">
    
@@ -17,12 +27,15 @@
         <a href="index.html">Services</a> |
         <a href="../about/index.html">About</a> |
         <a href="../contact/index.html">Contact</a>
+        
     </nav>
-    <h1 style="font-size: 60px; background-color:rgba(0, 0, 0, 0.164);">
-       J Studios
+    <h1 style="font-size: 35px; background-color:rgba(0, 0, 0, 0.164);">
+      Our Services.
     </h1>
-    
-    <a href="joinus.html">JOin US</a>
-
+    <div class="container">
+        <div class="row">
+            
+        </div>
+    </div>
 </body>
 </html>
