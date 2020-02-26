@@ -5,15 +5,41 @@
         </title>
        
         <link rel="stylesheet" href="../css/div.css">
+        <script src="../javascript/formjoin.js"></script>
     </head>
 
     <body style="margin-left: 13%; margin-right: 13%;">
          <h1 style="text-align: center;">Join Us. <hr></h1>
-         <script src="../javascript/epic.js"></script>
-         <form style="text-align: left;" action="">
-            
+         <br>
+         <form name="RegForm" action="/submit.php" onsubmit="return valid()" method="post">  
+      
+            <p>Name: <input type="text" size=65 name="Name"> </p><br>        
+            <p> Email ID: <input type="text" size=65 name="Email">  </p><br> 
+            <p>Phone No: <input type="text" size=65 name="phone">  </p><br> 
+            <p>What do you think you can do for us? <input type="text" size=65 name="ask">  </p><br>    
+         
+            <p>
+                How Did You Hear About Us?
+                <select value="yo" name="marketing" id="marketing">
+                    <option>YouTube</option>
+                    <option>Instagram</option> 
+                    <option>Other Social Media Platform</option> 
+                    <option>College</option> 
+                    <option>Friend</option>
+                    <option>Others</option>
 
-         </form>         
+                </select>
+            </p>
+                <br> 
+            <label for="img">Attach Your Resume Here:</label>
+            <input type="file" id="img" name="img" accept="image/*" ><br><br>
+            <label for="img/video">Attach Your Work/Projects Here:</label>
+            <input type="file" id="img" name="img" accept="image/* , video/* , audio/*">
+            <p>Comments:  <textarea cols="55" name="Comment">  </textarea></p> <br>
+            <p><input type="submit" value="send" name="Submit">      
+                <input type="reset" value="Reset" name="Reset">   
+            </p>          
+        </form>      
     </body>
 
 </html>
