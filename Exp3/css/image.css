@@ -1,0 +1,17 @@
+.column{
+    float: left;
+}
+
+div.column{
+    width: 33%;
+}
+
+img{
+    width: 98%;
+    height: 98%;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
